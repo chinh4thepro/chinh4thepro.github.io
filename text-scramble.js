@@ -1,4 +1,4 @@
-const lettersandnumbers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+const lettersandnumbers = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 
 document.querySelector("li").onmouseover = event => {
     let iterations = 0;
@@ -9,7 +9,7 @@ document.querySelector("li").onmouseover = event => {
                 if(index < iterations) {
                     return event.target.dataset.value[index];
                 }
-                return lettersandnumbers[Math.floor(Math.random() * 26)]
+                return lettersandnumbers[Math.floor(Math.random() * 62)]
             })
             .join("");
     
