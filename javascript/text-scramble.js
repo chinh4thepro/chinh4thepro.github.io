@@ -1,6 +1,6 @@
 const lettersandnumbers = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 
-document.querySelector("text-scrambling").onmouseover = event => {
+document.querySelector(".text-scrambling").onmouseover = event => {
     let iterations = 0;
 
     const interval = setInterval(() => {
